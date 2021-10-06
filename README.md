@@ -1,4 +1,4 @@
-I make this project for fun and to learn and understand device trees so it isn't for building roms unless for now
+I make this project for fun and to learn and understand device trees so it isn't for building roms it is just for experiment
 
 The Nokia 7 Plus (codenamed "Onyx", TLA "B2N") is a mid-range smartphone from Nokia. It was released in April 2018.
 Basic 	Spec Sheet
