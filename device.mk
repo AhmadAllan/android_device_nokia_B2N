@@ -9,10 +9,19 @@ AB_OTA_UPDATER := true
 # Inherit from wayne-common
 $(call inherit-product, device/xiaomi/wayne-common/wayne.mk)
 
+TODO: 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     device/xiaomi/jasmine_sprout/overlay
+  
+# Screen density 
+PRODUCT_AAPT_CONFIG := normal   
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Boot anmiation
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
+    ##############################################################
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
@@ -60,6 +69,6 @@ $(call inherit-product, build/target/product/verity.mk)
 # Wifi
 PRODUCT_PACKAGES += \
     JasmineWifiOverlay
-
+TODO: add vedor file
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/jasmine_sprout/jasmine_sprout-vendor.mk)
