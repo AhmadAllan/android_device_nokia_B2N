@@ -1,0 +1,20 @@
+[
+  {
+    "repository" : "xxxx/vendor_nokia",
+    "target_path": "vendor/nokia"
+    "branch": "xxx",
+    "remote": "github"	
+  },
+  {
+    "repository" : "AhmadAllan/kernel_nokia_sdm660",
+    "target_path": "kernel/nokia/sdm660"
+    "branch": "main",
+    "remote": "github"	
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-18.1",
+    "remote": "github"
+  }
+]
