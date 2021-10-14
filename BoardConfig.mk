@@ -1,4 +1,5 @@
 
+DEVICE_PATH := device/nokia/B2N
 #Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -45,7 +46,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_RAMDISK_OFFSET :=0x01000000
 
 TARGET_KERNEL_CONFIG := nokia_defconfig
-TARGET_KERNEL_SOURCE := kernel/nokia/sdm660
+TARGET_KERNEL_SOURCE := kernel/nokia/B2N
 
 #Partition
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
@@ -73,11 +74,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_VNDK_VERSION := current
 
 #SEPolicy - B2N
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
-
-#Sepolicy - Common
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 include vendor/nokia/B2N/BoardConfigVendor.mk

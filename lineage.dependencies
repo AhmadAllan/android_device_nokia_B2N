@@ -6,8 +6,8 @@
     "remote": "github"	
   },
   {
-    "repository" : "AhmadAllan/kernel_nokia_sdm660",
-    "target_path": "kernel/nokia/sdm660"
+    "repository" : "AhmadAllan/kernel_nokia_B2N",
+    "target_path": "kernel/nokia/B2N
     "branch": "main",
     "remote": "github"	
   },
