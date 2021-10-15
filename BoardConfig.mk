@@ -74,7 +74,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_VNDK_VERSION := current
 
 #SEPolicy - B2N
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
